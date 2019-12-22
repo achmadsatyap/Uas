@@ -54,7 +54,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_username" />
     <EditText
-        android:id="@+id/edt_password"
+        android:id="@+id/edt_password_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -76,7 +76,7 @@
         android:textSize="18sp"
         app:layout_constraintRight_toRightOf="parent"
         android:onClick="clickSignUp"
-        app:layout_constraintTop_toBottomOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password_login"
         />
     <Button
         android:id="@+id/btn_login"
