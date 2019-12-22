@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
-        android:text="Arisan Kuy"
+        android:text="Login"
         android:textColor="#313131"
         android:textSize="32sp"
         app:layout_constraintLeft_toLeftOf="parent"
