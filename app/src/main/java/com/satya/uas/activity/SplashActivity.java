@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.satya.uas.MainActivity;
 import com.satya.uas.R;
 import com.satya.uas.fargment.BiodataFargment;
 
@@ -93,7 +94,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void launchHomeScreen() {
-        startActivity(new Intent(SplashActivity.this, BiodataFargment.class));
+        startActivity(new Intent(SplashActivity.this, MainActivity.class));
         finish();
     }
 
