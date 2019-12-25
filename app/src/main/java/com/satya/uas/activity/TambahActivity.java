@@ -45,21 +45,21 @@ public class TambahActivity extends AppCompatActivity {
     }
 
     private void addBiodata() {
-        final String NamaLengkap = tNamaLengkap.getText().toString();
-        final String NoHp = tNoHp.getText().toString();
-        final String Umur = tUmur.getText().toString();
-        final String Alamat = tAlamat.getText().toString();
-        final String Email = tEmail.getText().toString();
+        final String namaLengkap = tNamaLengkap.getText().toString();
+        final String noHp = tNoHp.getText().toString();
+        final String umur = tUmur.getText().toString();
+        final String alamat = tAlamat.getText().toString();
+        final String email = tEmail.getText().toString();
 
-        if ( NamaLengkap.isEmpty() || NoHp.isEmpty() || Umur.isEmpty() || Alamat.isEmpty() || Email.isEmpty()){
+        if ( namaLengkap.isEmpty() || noHp.isEmpty() || umur.isEmpty() || alamat.isEmpty() || email.isEmpty()){
             showMessage("Mohon isi semua kolom ");
         }else {
-            Biodata arisan = new Biodata(NamaLengkap,NoHp,Umur,Alamat,Email);
-            databaseReference.child(Email).child("NamaLengkap").setValue(NamaLengkap.toString());
-            databaseReference.child(Email).child("NoHp").setValue(NoHp.toString());
-            databaseReference.child(Email).child("Umur").setValue(Umur.toString());
-            databaseReference.child(Email).child("Alamat").setValue(Alamat.toString());
-            databaseReference.child(Email).child("Email").setValue(Email.toString());
+            Biodata biodata = new Biodata(namaLengkap,noHp,umur,alamat,email);
+            databaseReference.child(noHp).child("NamaLengkap").setValue(namaLengkap.toString());
+            databaseReference.child(noHp).child("NoHp").setValue(noHp.toString());
+            databaseReference.child(noHp).child("Umur").setValue(umur.toString());
+            databaseReference.child(noHp).child("Alamat").setValue(alamat.toString());
+            databaseReference.child(noHp).child("Email").setValue(email.toString());
 
             Toast.makeText(getApplication(),"Success",Toast.LENGTH_LONG).show();
             Intent intent = new Intent(getApplication(), MainActivity.class);

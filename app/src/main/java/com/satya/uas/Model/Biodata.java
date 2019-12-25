@@ -1,56 +1,56 @@
 package com.satya.uas.Model;
 
 public class Biodata {
-    public String NamaLengkap, NoHp, Umur, Alamat, Email;
+    public String namaLengkap, noHp, umur, alamat, email;
     public Biodata() {
 
     }
 
     public String getNamaLengkap() {
-        return NamaLengkap;
+        return namaLengkap;
     }
 
     public void setNamaLengkap(String namaLengkap) {
-        NamaLengkap = namaLengkap;
+        this.namaLengkap = namaLengkap;
     }
 
     public String getNoHp() {
-        return NoHp;
+        return noHp;
     }
 
     public void setNoHp(String noHp) {
-        NoHp = noHp;
+        this.noHp = noHp;
     }
 
     public String getUmur() {
-        return Umur;
+        return umur;
     }
 
     public void setUmur(String umur) {
-        Umur = umur;
+        this.umur = umur;
     }
 
     public String getAlamat() {
-        return Alamat;
+        return alamat;
     }
 
     public void setAlamat(String alamat) {
-        Alamat = alamat;
+        this.alamat = alamat;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public Biodata(String namaLengkap, String noHp, String umur, String alamat, String email) {
-        NamaLengkap = namaLengkap;
-        NoHp = noHp;
-        Umur = umur;
-        Alamat = alamat;
-        Email = email;
+        this.namaLengkap = namaLengkap;
+        this.noHp = noHp;
+        this.umur = umur;
+        this.alamat = alamat;
+        this.email = email;
     }
 }
