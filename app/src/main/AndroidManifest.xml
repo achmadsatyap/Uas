@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.TambahActivity"></activity>
+        <activity android:name=".activity.DetailBio"></activity>
+        <activity android:name=".activity.ListBiodata" />
+        <activity android:name=".activity.TambahActivity" />
         <activity android:name=".activity.SplashActivity" />
         <activity android:name=".activity.RegistarsiActivity" />
         <activity android:name=".MainActivity" />

@@ -55,11 +55,11 @@ public class TambahActivity extends AppCompatActivity {
             showMessage("Mohon isi semua kolom ");
         }else {
             Biodata biodata = new Biodata(namaLengkap,noHp,umur,alamat,email);
-            databaseReference.child(noHp).child("NamaLengkap").setValue(namaLengkap.toString());
-            databaseReference.child(noHp).child("NoHp").setValue(noHp.toString());
-            databaseReference.child(noHp).child("Umur").setValue(umur.toString());
-            databaseReference.child(noHp).child("Alamat").setValue(alamat.toString());
-            databaseReference.child(noHp).child("Email").setValue(email.toString());
+            databaseReference.child(namaLengkap).child("namaLengkap").setValue(namaLengkap.toString());
+            databaseReference.child(namaLengkap).child("noHp").setValue(noHp.toString());
+            databaseReference.child(namaLengkap).child("umur").setValue(umur.toString());
+            databaseReference.child(namaLengkap).child("alamat").setValue(alamat.toString());
+            databaseReference.child(namaLengkap).child("email").setValue(email.toString());
 
             Toast.makeText(getApplication(),"Success",Toast.LENGTH_LONG).show();
             Intent intent = new Intent(getApplication(), MainActivity.class);
